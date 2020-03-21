@@ -1,0 +1,41 @@
+{
+  "name": "paprika-scraper",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts ./test/mocha.opts",
+    "build": "tsc && npm run lint",
+    "clean": "rm -r build/",
+    "exec": "npm run build && node build/index.js",
+    "lint": "eslint src/**/*.ts"
+  },
+  "author": "serverless.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bluebird": "^3.5.30",
+    "@types/convict": "^4.2.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/json2csv": "^4.5.1",
+    "@types/lodash": "^4.14.149",
+    "@types/mailgun-js": "^0.22.4",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^13.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "serverless-google-cloudfunctions": "*",
+    "ts-node": "^8.7.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "convict": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "json2csv": "^5.0.0",
+    "lodash": "^4.17.15",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.24.0",
+    "paprika-api": "^1.0.3"
+  }
+}
